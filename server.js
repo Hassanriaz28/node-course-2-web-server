@@ -57,6 +57,14 @@ app.get ('/',(req,res)=>
      }); 
  });
 
+ app.get('/projects',(req,res)=>{
+     res.render('projects.hbs',{
+        pageTitle:'Project Page',
+         welcomeMessage:'Welcome to my Website',        
+        
+     }); 
+ });
+
 app.get('/bad',(req,res)=>
 {
     res.send({
